@@ -1,3 +1,9 @@
+/*
+  Method overriding মানে হচ্ছে —
+  যখন child class তার parent class-এর কোনো method-এর একই নাম, return type, এবং parameters রেখে নতুনভাবে সেই method-এর body লিখে দেয়,
+  যাতে call করার সময় child class-এর method টি কার্যকর হয়।
+*/
+
 class Animal1 {
   makeSound(): void {
     console.log('Some generic animal sound.');

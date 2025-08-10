@@ -1,8 +1,7 @@
 /*
 
 Inheritance কী?
-Inheritance হলো এমন একটি প্রক্রিয়া যেখানে একটি class (child class বা subclass) অন্য একটি class (parent class বা superclass)
- থেকে সমস্ত বৈশিষ্ট্য (properties) এবং পদ্ধতি (methods) উত্তরাধিকারসূত্রে পায়।
+Inheritance হলো OOP-এর একটি প্রক্রিয়া, যেখানে একটি child class parent class-এর properties ও methods উত্তরাধিকারসূত্রে পেয়ে সেগুলো ব্যবহার  করতে পারে।
 
 Parent Class: যে ক্লাস থেকে উত্তরাধিকার নেওয়া হয়।
 Child Class: যে ক্লাস parent class-এর বৈশিষ্ট্য উত্তরাধিকারসূত্রে পায়
@@ -17,23 +16,23 @@ Interface: Structure define করে এবং inheritance সমর্থন �
 */
 
 class Animal {
-    name: string;
+  name: string;
 
-    constructor(name: string) {
-        this.name = name;
-    }
+  constructor(name: string) {
+    this.name = name;
+  }
 
-    eat(): void {
-        console.log(`${this.name} is eating.`);
-    }
+  eat(): void {
+    console.log(`${this.name} is eating.`);
+  }
 }
 class Dog extends Animal {
-    makeSound() {
-        throw new Error("Method not implemented.");
-    }
-    bark(): void {
-        console.log(`${this.name} is barking.`);
-    }
+  makeSound() {
+    throw new Error('Method not implemented.');
+  }
+  bark(): void {
+    console.log(`${this.name} is barking.`);
+  }
 }
 
 const myDog = new Dog('Buddy');
